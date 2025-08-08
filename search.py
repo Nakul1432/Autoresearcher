@@ -7,7 +7,7 @@ from serpapi import GoogleSearch
 
 
 
-api ="f864433b6203f21d38f86593cedce188b87616c397dd63f262f9b439e42e6994"
+api ="your serp api key"
 
 
 
@@ -42,4 +42,5 @@ def scrape_url(url):
             return soup.get_text()
     except requests.RequestException as e:
         print(f"Error fetching {url}: {e}")
+
         return None
